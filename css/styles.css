@@ -69,54 +69,26 @@ header nav ul li a:hover, #nav_current {
 	-o-transform: skew(-20deg); 
 }
 /* mainContent */
-.mainContent { 
+.mainContent {
 	background: #E8E5DD; 
 	width: 1000px; 
 	margin: 20px auto; 
 	overflow: hidden; 
 }
+
 aside { 
 	width: 270px; 
 	float: left; 
 }
-.avatar { 
-	margin: 20px auto; 
-	width: 160px; 
-	height: 160px; 
-	border-radius: 160px; 
-	-moz-border-radius: 160px; 
-	-webkit-border-radius: 160px; 
-	overflow: hidden; 
+
+.avatar {
+    border-radius: 50%;
+    width: 195px;
+    height: 195px;
+    text-align: center;
 }
-.avatar a { 
-	display: block; 
-	padding-top: 97px; 
-	width: 160px; 
-	height: 63px; 
-	background: url(../images/chaoren.jpg) no-repeat; 
-	background-size: 160px 160px;
-}
-.avatar a span { 
-	display: block; 
-	margin-top: 63px; 
-	padding-top: 8px; 
-	width: 160px; 
-	height: 55px; 
-	text-align: center; 
-	font-size: 16px; 
-	line-height: 20px; 
-	color: #fff; 
-	background: rgba(0, 0, 0, .5); 
-	-webkit-transition: margin-top .2s ease-in-out; -
-	moz-transition: margin-top .2s ease-in-out; 
-	-o-transition: margin-top .2s ease-in-out; 
-	transition: margin-top .2s ease-in-out; 
-}
-.avatar a:hover span { 
-	display: block; 
-	margin-top: 0; 
-}
-.topspaceinfo { 
+
+.topspaceinfo {
 	background: #f16e50; 
 	padding: 40px 20px; 
 	color: #fff; 
@@ -158,6 +130,7 @@ aside section h2 {
 	line-height: 30px; 
 	font-size: 14px; 
 }
+
 .newpic ul, .taglist ul { 
 	padding: 20px 30px; 
 	overflow: hidden; 
@@ -694,4 +667,24 @@ footer {
 }
 .Copyright ul a:hover { 
 	color: #ff8b70;
+}
+
+.wechart{
+	position: fixed;
+	box-sizing: border-box;
+	opacity: 0.9;
+	top: 50%;
+	margin-top: -305px;
+	right: 0px;
+	text-align: center;
+	border: 1px solid #e9e9e9;
+	background:#fff;
+	border-radius: 4px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.hintp{
+	font-size: 14px;
+	margin-top: -12px;
 }

@@ -51,15 +51,13 @@
             <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题-->
         </nav>
     </header>
-    
     <!-- 主体 -->
     <div class="mainContent">
         <!-- 设置微信二维码 -->
         <div class="wechart">
             <img src="images/wechat.jpg" alt="" style="width: 180px;">
             <p class="hintp">扫一扫关注郑志强</p>
-        </div>
-    
+        </div>    
         <aside>
             <!-- 头像 -->
             <div class="avatar">
@@ -70,16 +68,14 @@
                 <h1>在此相遇是缘分</h1>
                 <p>于千万人之中，我遇见了你们....</p>
             </section>
-            
-            <div class="userinfo">
+            <div class="userinfo"> 
                 <p class="btns">
                     <a href="http://www.mrlayfolk.club/" target="_blank" >主页</a>
                     <a href="http://weibo.com/zhengcixi" target="_blank">微博</a>
                     <a href="https://zhengcixi.github.io/photo-frame/index.html" target="_blank">相册</a>
                 </p>   
             </div>
-
-             <section class="taglist">
+            <section class="taglist">
                 <h2>全部标签</h2>
                 <ul>
                     <li><a href="/">生活</a></li>
@@ -102,44 +98,44 @@
             </section>
         </aside>
                     
-        <div class="blogitem">
+        <div class="blogitem">       
             <article>
-                <h2 class="title"><a href="/" class="accordion-toggle" onClick="showPDF('article/交换机基本知识.pdf')">交换机的基本知识</a></h2>
+                <h2 class="title"><a href="/" class="accordion-toggle" onClick="showPDF('article/sy4.pdf')">实验四：划分多个VLAN</a></h2>
                 <ul class="text">
-                    <p>本文主要介绍了交换机的基本知识，主要包括tag和untag报文的区别，交换机端口的三种模式Access、Trunk和Hybrid，以及链路聚合的概念。</p>
-                    <p>另外，使用了思科的Cisco Packet Tracer模拟器和华为的eNSP模拟器进行了模拟实验，并作出了简要的实验步骤和实验现象的简要说明（具体的实验在后面的博客中，欢迎围观）。</p>
-                    <p>写作过程中参照了以下两位网友的博客，在此特别感谢。</p>
-                    <p>《access,trunk，hybrid端口分析》&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.cnblogs.com/heguoze/p/9256125.html" target="_blank">小白成长纪录片</a></p>
-                    <p>《用华为eNSP模拟器配置Hybrid、Trunk和Access三种链路类型端口》&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.cnblogs.com/chenlinlab/p/9461361.html" target="_blank">陈林实验室</a></p>
+                    <p>本次实验主要是通过设置交换机的端口为不同的端口模式来进行划分的。</p>
+                    <p>配置图如下所示。</p>
+                    <p class="textimg"><img src="images/switch/sy4.jpg"></p>
+                    <p>PC0、PC1、PC2属于vlan301，PC3、PC4、PC5属于vlan302，PC6、PC7、PC8属于vlan303。</p>
+                    <p>交换机switch1、switch2、switch3和主机直接通过access端口模式进行连接，和switch0之间通过trunk接口进行连接。</p>
                 </ul>
                 <div class="textfoot">
-                    <a class="accordion-toggle" onClick="showPDF('article/交换机基本知识.pdf')">阅读全文
+                    <a class="accordion-toggle" onClick="showPDF('article/sy4.pdf')">阅读全文
                         <span>【点击查看】</span>
                     </a>
                 </div>
             </article>
 
             <article>
-                <h2 class="title"><a href="/" class="accordion-toggle" onClick="showPDF('article/sy1.pdf')">实验一：通过Access划分vlan</a></h2>
+                <h2 class="title"><a href="/" class="accordion-toggle" onClick="showPDF('article/sy5.pdf')">实验五：配置Eth-Trunk链路聚合（手工负载分担模式）</a></h2>
                 <ul class="text">
-                    <p>access端口只能属于一个vlan，通常用于连接终端设备。</p>
+                    <p>链路聚合是指两条或多条物理链路聚合在一起形成一个更高带宽的逻辑链路，实现链路聚合的端口形成一个逻辑上的聚合组。</p>
                     <p>配置图如下所示。</p>
-                    <p class="textimg"><img src="images/switch/sy1.jpg"></p>
-                    <p>本次实验将交换机的fa0/1、fa0/2、fa0/3端口都设置为access模式，并将fa0/1和fa0/2配置为属于vlan2，fa0/3配置为属于vlan3，这样PC1就只能和PC2之间进行通信，不能和PC3进行通信。</p>
+                    <p class="textimg"><img src="images/switch/sy5.jpg"></p>
+                    <p>本次实现所要达到的效果是：交换机LSW1和LSW2之间有三条物理链路，通过设置活动接口的上线阈值为3，g0/0/1和g0/0/2的优先级为100，当其中一条链路发生故障时，备份链路g0/0/3将开启。</p>
                     <p></p>
                 </ul>
                 <div class="textfoot">
-                    <a class="accordion-toggle" onClick="showPDF('article/sy1.pdf')">阅读全文
+                    <a class="accordion-toggle" onClick="showPDF('article/sy5.pdf')">阅读全文
                         <span>【点击查看】</span>
                     </a>
                 </div>
             </article>
 
             <div class="pages">
-                <span>1</span>
+                <a href="index.html" hidefocus="">1</a>
                 <a href="page2.html" hidefocus="">2</a>
-                <a href="page3.html" hidefocus="">3</a>
-                <a href="/" class="next">下一页&gt;&gt;</a></div>
+                 <span>3</span>
+                <a href="/" class="next">下一页&gt;&gt;</a></di>
             </div>
         </div>
     </div>
