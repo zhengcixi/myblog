@@ -88,7 +88,7 @@
             <section class="taglist">
                 <h2>文章列表</h2>
                 <ul>
-                  <h3>交换机系列文章</h3>
+                    <h3>交换机系列文章</h3>
                     <li><p><a class="accordion-toggle" onClick="showPDF('article/交换机基本知识.pdf')">交换机基本知识</a></p></li>
                     <li><p><a class="accordion-toggle" onClick="showPDF('article/sy1.pdf')">实验一：通过Access划分vlan</a></p></li>
                     <li><p><a class="accordion-toggle" onClick="showPDF('article/sy2.pdf')">实验二：在 Cisco Packet Tracer 模拟器上进行Trunk+Access 端口混合模式实验</a></p></li>
@@ -104,32 +104,31 @@
                     
         <div class="blogitem">       
             <article>
-                <h2 class="title"><a class="accordion-toggle" onClick="showPDF('article/sy2.pdf')">实验二：在Cisco Packet Tracer模拟器上进行Trunk+Access端口混合模式实验</a></h2>
+                <h2 class="title"><a class="accordion-toggle" onClick="showPDF('article/socket.pdf')">Linux下socket编程基本知识</a></h2>
                 <ul class="text">
-                    <p>Trunk类型的端口可以允许多个vlan通过，可以接收和发送多个vlan的报文，一般用于交换机之间的端口。</p>
-                    <p>配置图如下所示。</p>
-                    <p class="textimg"><img src="images/switch/sy2.jpg"></p>
-                    <p>本次实验将PC0和PC1划分到vlan2，PC2和PC3划分到vlan3，交换机switch0和switch1之间使用trunk模式进行连接，虽然PC0和PC2连接在同一个交换机上，但是他们之间是不能通信的。</p>
-                    <p></p>
-                </ul>
+                    <p>本文档主要讲解了Linux下socket编程的一些基本知识，主要包括套接字和字节序的概念，以及一些常用的结构体和函数。</p>
+                    <p class="textimg"><img src="images/socket/socket.jpg"></p>
+                    <p>本文是在网易云课堂学习过程中的记录，这个老师讲得很不错，推荐大家围观。</p>
+                    <p>Linux网络编程&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://study.163.com/course/courseMain.htm?courseId=1002913013&share=1&shareId=1024164580" target="_blank">Linux网络编程|人工智能物联网</a></p>
+               </ul>
                 <div class="textfoot">
-                    <a class="accordion-toggle" onClick="showPDF('article/sy2.pdf')">阅读全文
+                    <a class="accordion-toggle" onClick="showPDF('article/socket.pdf')">阅读全文
                         <span>【点击查看】</span>
                     </a>
                 </div>
             </article>
 
             <article>
-                <h2 class="title"><a class="accordion-toggle" onClick="showPDF('article/sy3.pdf')">实验三：在eNSP 上进行Hybrid链路类型端口实验</a></h2>
+                <h2 class="title"><a class="accordion-toggle" onClick="showPDF('article/TCPComm.pdf')">TCP客户端服务器编程模型</a></h2>
                 <ul class="text">
-                    <p>Hybrid类型的端口可以允许多个VLAN通过，可以接收和发送多个vlan的报文，可以用于交换机之间的连接，也可以用于连接用户的计算机。</p>
-                    <p>配置图如下所示。</p>
-                    <p class="textimg"><img src="images/switch/sy3.jpg"></p>
-                    <p>本次实现所要达到的效果是：PC3可以和PC1、PC2通信，但是PC1不能和PC2通信。实现原理是通过设置端口为hybrid模式。</p>
-                    <p></p>
+                    <p>本文介绍了Linux下使用流式套接字（也就是使用TCP协议）的客户端服务器双方的通信模型，通过对客户端服务器调用序列的分析，可以了解到编程的步骤。</p>
+                    <p>另外，也对其中用到的一些函数进行了说明。</p>
+                    <p class="textimg"><img src="images/socket/tcpmode.jpg"></p>
+                    <p>本文是在网易云课堂学习过程中的记录，这个老师讲得很不错，推荐大家围观。</p>
+                    <p>Linux网络编程&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://study.163.com/course/courseMain.htm?courseId=1002913013&share=1&shareId=1024164580" target="_blank">Linux网络编程|人工智能物联网</a></p>
                 </ul>
                 <div class="textfoot">
-                    <a class="accordion-toggle" onClick="showPDF('article/sy3.pdf')">阅读全文
+                    <a class="accordion-toggle" onClick="showPDF('article/TCPComm.pdf')">阅读全文
                         <span>【点击查看】</span>
                     </a>
                 </div>
@@ -137,16 +136,16 @@
 
             <div class="pages">
                 <a href="index.html" hidefocus="">首页</a>
-                <a href="index.html" hidefocus="">上一页</a>
+                <a href="page3.html" hidefocus="">上一页</a>
                 <a href="index.html" hidefocus="">1</a>
-                <span>2</span>
+                <a href="page2.html" hidefocus="">2</a>
                 <a href="page3.html" hidefocus="">3</a>
-                <a href="page4.html" hidefocus="">4</a>
+                <span>4</span>
                 <a href="" hidefocus="">5</a>
                 <a href="" hidefocus="">6</a>
                 <a href="" hidefocus="">7</a>
                 <a href="" hidefocus="">8</a>
-                <a href="page3.html" class="next">下一页&gt;&gt;</a></di>
+                <a href="/" class="next">下一页&gt;&gt;</a></di>
             </div>
         </div>
     </div>
@@ -158,6 +157,7 @@
             <p class="finfo">性别：男 年龄：25岁</p>
             <p>现居：四川成都</p></ul>
         </div>
+
         <div class="Copyright">
             <p>Design by Zhengzhiqiang</p>
         </div>
